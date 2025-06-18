@@ -27,6 +27,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
+# Install curl
+RUN apk add --no-cache curl
+
 COPY . .
 
 EXPOSE 8000
