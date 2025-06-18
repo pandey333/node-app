@@ -18,13 +18,14 @@
 
 const http = require('http');
 
-const PORT = 8000;
+const HOST = '0.0.0.0';
+const PORT = 80;
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello from Node.js on port 80!\n');
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(Server running at http://${HOST}:${PORT}/);
 });
