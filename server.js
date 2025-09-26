@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
   res.end('Hello I am Rajat....%$%$%$%$%$%$%$%$%.... My backend is running on port 8000!\n');
 });
 
-server.listen(PORT, HOST, () => {
+server.list(PORT, HOST, () => {
   console.log(`Server is running at http://${HOST}:${PORT}/`);
 });
 
