@@ -1,6 +1,8 @@
 infrastructureDefinition:
   name: aws ecs
   identifier: aws_ecs
+  tags:
+    poc: ""
   orgIdentifier: default
   projectIdentifier: harnesspoc
   environmentRef: poc
